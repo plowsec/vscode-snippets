@@ -141,7 +141,7 @@
 		"body": [
 			"\\begin{pmatrix}$1\\end{pmatrix}"
 		],
-		"description": "Insert rightarrow"
+		"description": "Insert matrix"
 	},
 
 	"Insert cases": {
@@ -157,7 +157,15 @@
 		"body": [
 			"\\sum\\limits_{${1:k=0}}^{${2:n}} $2"
 		],
-		"description": "Insert cases"
+		"description": "Insert sum"
+	},
+
+	"Insert integrale": {
+		"prefix": "int",
+		"body": [
+			"\\int_{$1}^{$2}"
+		],
+		"description": "Insert integrale"
 	},
 
 	"Insert math": {
