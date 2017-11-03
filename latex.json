@@ -39,6 +39,22 @@
 		"description": "Insert or wrap selected text with section"
 	},
 
+	"Insert subsection": {
+		"prefix": "subsec",
+		"body": [
+			"\\subsection{${1:$TM_SELECTED_TEXT}}"
+		],
+		"description": "Insert or wrap selected text with subsection"
+	},
+
+	"Insert subsubsection": {
+		"prefix": "sbsec",
+		"body": [
+			"\\subsubsection{${1:$TM_SELECTED_TEXT}}"
+		],
+		"description": "Insert or wrap selected text with subsubsection"
+	},
+
 	"Insert paragraph": {
 		"prefix": "para",
 		"body": [
@@ -69,5 +85,86 @@
 			"\\begin{itemize}\n    \\item $1\n\\end{itemize}\n$2"
 		],
 		"description": "Insert itemize environnment with one item"
+	},
+
+	"Insert tabular": {
+		"prefix": "tab",
+		"body": [
+			"\\begin{center}",
+			"{\\renewcommand{\\arraystretch}{1.5}% for the vertical padding",
+		  	"\\begin{tabular}{${1:c c c}}",
+			"\\hline",
+			"\\emph{$2} & \\emph{$3} &\\emph{$4}\\\\\\",
+			"\\hline",
+			"${5: & &}\\\\\\",
+			"\\bottomrule\\hline",
+			"\\end{tabular}}",
+			"\\end{center}"
+		],
+		"description": "Insert a table"
+	},
+
+	"Insert emph": {
+		"prefix": "emph",
+		"body": [
+			"\\emph{$1}"
+		],
+		"description": "Insert emph"
+	},
+
+	"Insert bold": {
+		"prefix": "bold",
+		"body": [
+			"\\textbf{$1}"
+		],
+		"description": "Insert bold"
+	},
+
+	"Insert rightarrow": {
+		"prefix": "arrow",
+		"body": [
+			"\\rightarrow"
+		],
+		"description": "Insert rightarrow"
+	},
+
+	"Insert vector": {
+		"prefix": "vec",
+		"body": [
+			"\\vec{$1}"
+		],
+		"description": "Insert vector"
+	},
+
+	"Insert matrix": {
+		"prefix": "matrix",
+		"body": [
+			"\\begin{pmatrix}$1\\end{pmatrix}"
+		],
+		"description": "Insert rightarrow"
+	},
+
+	"Insert cases": {
+		"prefix": "cases",
+		"body": [
+			"\\begin{cases}$1\\end{cases}"
+		],
+		"description": "Insert cases"
+	},
+
+	"Insert sum": {
+		"prefix": "sum",
+		"body": [
+			"\\sum\\limits_{${1:k=0}}^{${2:n}} $2"
+		],
+		"description": "Insert cases"
+	},
+
+	"Insert math": {
+		"prefix": "math",
+		"body": [
+			"\\[\n$1\n\\]"
+		],
+		"description": "Insert math"
 	}
 }
